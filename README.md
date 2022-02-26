@@ -14,16 +14,25 @@ to make the JSON response into A Plain Old Java Object.
 
 ## Demo
 
-Insert gif or link to demo
+https://google-clone-flaysh.herokuapp.com
 
 
 ## Deployment
 
 To deploy this project run
-
 ```bash
-  npm run deploy
+  mvn install 
 ```
+and then
+```bash
+  java -jar target/app-0.0.1-SNAPSHOT.jar
+```
+or
+```bash
+  mvn spring-boot:run
+```
+
+
 
 
 ## API Reference
@@ -53,8 +62,6 @@ To deploy this project run
 ## Related Links
  - [Rapid API Google Search by apigeek](https://rapidapi.com/apigeek/api/google-search3)
  - [Spring Boot](https://spring.io/)
-
-
+ 
 ## Authors
-
 - [@flaysh](https://www.github.com/flaysh)
