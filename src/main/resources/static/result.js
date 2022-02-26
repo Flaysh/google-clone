@@ -21,7 +21,7 @@ $(document).ready(function () {
     let encodedParam = encodeURIComponent(param.replace(/ /g, "+"));
     let search_options = {
       type: "GET",
-      url: " https://hidden-cliffs-64803.herokuapp.com/search?query=" + encodedParam,
+      url: "https://google-clone-flaysh.herokuapp.com/search?query=" + encodedParam,
     };
     $.ajax(search_options)
       .done(function (response) {
@@ -50,7 +50,7 @@ $(document).ready(function () {
   function getPreviousSearches(param) {
     let search_options = {
       type: "GET",
-      url: " https://hidden-cliffs-64803.herokuapp.com/previous?query=" + param,
+      url: "https://google-clone-flaysh.herokuapp.com/previous?query=" + param,
     };
     $.ajax(search_options)
       .done(function (response) {
