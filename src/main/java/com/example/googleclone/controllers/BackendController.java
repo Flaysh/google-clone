@@ -9,6 +9,7 @@ package com.example.googleclone.controllers;
 
 import com.example.googleclone.dataStructs.PreviousSearch;
 import com.example.googleclone.dataStructs.Root;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 public class BackendController {
     //use the Backend Functions
@@ -25,6 +26,7 @@ public class BackendController {
 
     //route ../previous?query="" --> add the latest search query and get the active session user his previous results
     //creates new PreviousSearch Object, adding to current List and then filters and return the needed one.
+    // to allow from specific domain
     @GetMapping("/previous")
     public ArrayList<PreviousSearch> addToPreviousSearches(@RequestParam(value = "query") String query,HttpSession session) {
         PreviousSearch ps = new PreviousSearch(query,session.getId());
