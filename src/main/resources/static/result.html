@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Google Clone Search Result</title>
+    <link rel="stylesheet" href="result.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="result.js"></script>
+  </head>
+
+  <body>
+    <div class="topContainer">
+      <a href="/" target="_self">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+          alt=""
+      /></a>
+      <ul class="accountOptions">
+        <li>
+          <a href="#"><i class="fas fa-th"></i></a>
+        </li>
+        <li>
+          <button class="signIn" type="button" name="button">Sign In</button>
+        </li>
+      </ul>
+
+      <div class="searchTools">
+        <input type="text" id="input-field" value="" />
+        <div class="previous-searches"></div>
+        <ul class="searchToolOptions">
+          <li class="left active"><a href="#">All</a></li>
+          <li class="left"><a class="searchToolOption" href="#">News</a></li>
+          <li class="left"><a class="searchToolOption" href="#">Videos</a></li>
+          <li class="left">
+            <a class="searchToolOption" href="#">Shopping</a>
+          </li>
+          <li class="left"><a class="searchToolOption" href="#">Maps</a></li>
+          <li class="left"><a class="searchToolOption" href="#">More</a></li>
+          <li class="right">
+            <a class="searchToolOption" href="#">Settings</a>
+          </li>
+          <li class="right"><a class="searchToolOption" href="#">Tools</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="loader"></div> 
+        <div class="searchResults"></div>
+
+    <table>
+      <tr>
+        <td><span class="blue">G</span></td>
+        <td><span class="red">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="yellow">o</span></td>
+        <td><span class="blue">g</span></td>
+        <td><span class="green">l</span></td>
+        <td><span class="red">e</span></td>
+        <td rowspan="2" style="width: 10px"></td>
+        <td>
+          <span class="blue"><i class="fas fa-angle-right"></i></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="pageNumber"></td>
+        <td class="pageNumber"></td>
+        <td class="pageNumber">1</td>
+        <td class="pageNumber">2</td>
+        <td class="pageNumber">3</td>
+        <td class="pageNumber">4</td>
+        <td class="pageNumber">5</td>
+        <td class="pageNumber">6</td>
+        <td class="pageNumber">7</td>
+        <td class="pageNumber">8</td>
+        <td class="pageNumber">9</td>
+        <td class="pageNumber">10</td>
+        <td colspan="3"></td>
+        <td class="pageNumber">Next</td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      <p>
+        <strong>Tel Aviv, IL</strong> - From your search history - Use precise
+        location - Learn more
+      </p>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Send feedback</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

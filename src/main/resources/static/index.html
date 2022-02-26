@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //small jQuery script to redirect to result page and send params correctly, encoded for next page 
+        $(document).ready(function () {
+            //send to result page on button click
+                $(".search-btn").click(function () {
+                    if($("#input-field").val()){
+                    window.location.replace("result?query=" + encodeURIComponent($("#input-field").val().replace(/ /g,'+')));
+                }})
+                //send to result page on enter
+            $("#input-field").on("keypress", function (e) {
+                if (e.which == 13 && $("#input-field").val()) {
+                    window.location.replace("result?query=" + encodeURIComponent($("#input-field").val().replace(/ /g,'+')));
+                }
+            })            
+        });
+    </script>
+    <title>Google Clone</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__right">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <span class="material-icons header__apps"> apps </span>
+            <span class="material-icons"> account_circle </span>
+        </div>
+    </div>
+    <div class="mainBody">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            alt="Google Logo" />
+        <div class="search">
+            <div class="search__input">
+                <span class="material-icons"> search </span>
+                <input id="input-field" type="text" />
+                <span class="material-icons"> mic </span>
+            </div>
+
+            <div class="search__buttons">
+                <button class="search-btn">Google Search</button>
+                <button class="search-btn"> I'm Feeling Lucky</button>
+            </div>
+        </div>
+
+</body>
+
+</html>
