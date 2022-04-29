@@ -31,7 +31,7 @@ public class BackendFunctions {
                 .header("x-user-agent", "desktop")
                 .header("x-proxy-location", "EU")
                 .header("x-rapidapi-host", "google-search3.p.rapidapi.com")
-                .header("x-rapidapi-key", "f60ce244a5msh717f47dd2a40e32p1ae34ejsnc9a3affb2fe3")
+                .header("x-rapidapi-key", "YOUR_API_KEY_HERE")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
