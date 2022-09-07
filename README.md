@@ -10,13 +10,6 @@ Built with Spring Boot Library, a REST API Provider for JAVA, also using Jackson
 to make the JSON response into A Plain Old Java Object.
 
 
-
-
-## Demo
-
-https://google-clone-flaysh.herokuapp.com
-
-
 ## Deployment
 
 To deploy this project run
