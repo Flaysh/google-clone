@@ -55,6 +55,3 @@ or
 ## Related Links
  - [Rapid API Google Search by apigeek](https://rapidapi.com/apigeek/api/google-search3)
  - [Spring Boot](https://spring.io/)
- 
-## Authors
-- [@flaysh](https://www.github.com/flaysh)
